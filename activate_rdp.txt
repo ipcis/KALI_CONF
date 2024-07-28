@@ -1,0 +1,9 @@
+sudo apt-get install xrdp
+sudo systemctl start xrdp
+sudo systemctl start xrdp-sesman
+sudo update-rc.d xrdp enable
+sudo adduser --home /rdp rdp
+sudo usermod -aG rdp
+sudo systemctl restart xrdp
+
+login with rdp and the password.
